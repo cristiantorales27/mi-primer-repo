@@ -25,5 +25,5 @@ urlpatterns = [
     path("saludar/persona/<nombre>",saludar_a),
     path("saludo-personalizado/", saludo_personalizado),
     path("listar-cursos",listar_cursos),
-    path("listar-familiar",listar_familia)
+    path("familia",listar_familia)
 ]
