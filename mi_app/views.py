@@ -34,6 +34,6 @@ def listar_cursos(request):
 def listar_familia(request):
     context = {}
 
-    context["familia"] = Familia.objects.all()
+    context["familiares"] = Familia.objects.all()
 
-    return render(request, "mi_app/lista_familia.html",context)
+    return render(request, "mi_app/familia.html",context)
