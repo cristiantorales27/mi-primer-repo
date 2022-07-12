@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mi_app.views import listar_cursos, saludar_a, saludo, saludo_personalizado
+from mi_app.views import listar_cursos, saludar_a, saludo, saludo_personalizado, listar_familia
 from mi_app.views import listar_familia
 
 
