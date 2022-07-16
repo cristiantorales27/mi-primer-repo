@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import date, datetime
-from mi_app.models import Curso
+from mi_app.models import Curso, Estudiantes
 from mi_app.models import Familia
 # Create your views here.
 
@@ -37,3 +37,9 @@ def listar_familia(request):
     context["familiares"] = Familia.objects.all()
 
     return render(request, "mi_app/familia.html",context)
+
+def listar_estudiantes(request):
+    context= {}
+
+    context["estudiantes"] = Estudiantes.objects.all()
+    return render(request, "mi_app/lista_estudiantes.html",context)
