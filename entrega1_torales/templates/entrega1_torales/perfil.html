@@ -2,4 +2,7 @@
 
 {% block cuerpo %}
     <div>Este es el menu de perfiles</div>
+    {% for perfiles in perfil %}
+    <li> {{perfil.nombre}},{{perfil.apellido}}, {{perfil.email}}, {{perfil.edad}}</li>
+{% endfor %}
 {% endblock %}

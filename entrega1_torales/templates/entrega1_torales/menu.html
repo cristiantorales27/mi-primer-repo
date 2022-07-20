@@ -3,5 +3,8 @@
 {% block cuerpo %}
 
     <div>Este es el menu principal</div>
+
+        {% for menu in menu %}
+            <li> {{menu.nombre}},{{menu.apellido}},,{{menu.email}},{{menu.titulo}},{{menu.consulta}} </li>
     
 {% endblock %}

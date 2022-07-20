@@ -3,5 +3,8 @@
 {% block cuerpo %}
 
     <div>Este es el de mensajes</div>
+
+    {% for mensajes in mensajes %}
+    <li> {{mensajes.nombre}},{{mensajes.camada}}</li>    
     
 {% endblock %}
