@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mi_app.apps.MiAppConfig',
     'manejador_contenido',
+    'entrega1_torales',
 ]
 
 MIDDLEWARE = [
